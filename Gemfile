@@ -7,3 +7,4 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-slim'
 gem 'jemoji'
+
