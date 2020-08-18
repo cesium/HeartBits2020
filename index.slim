@@ -1,0 +1,56 @@
+---
+---
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    link href="/img/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" /
+    link href="/img/fav/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /
+    link href="/img/fav/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /
+    link href="/img/fav/site.webmanifest" rel="manifest" /
+    link color="#3241a6" href="/img/fav/safari-pinned-tab.svg" rel="mask-icon" /
+    link href="/img/fav/favicon.ico" rel=("shortcut icon") /
+    meta content="#3241a6" name="msapplication-TileColor" /
+    meta content="/img/fav/browserconfig.xml" name="msapplication-config" /
+    meta content="#3241a6" name="theme-color" /
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" type="text/css" /
+    link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" /
+    link rel="stylesheet" href="css/main.css"  type="text/css" /
+    title {{ site.title }}
+  body
+    video#background-video autoplay="" loop="" muted="" 
+      source src="img/video.mp4" type="video/mp4"
+    .content
+      img.logo src="img/logo_white.png" /
+      {% if site.date %}
+      h1.title {{ site.date }}
+      {% endif %}
+      {% if site.previous_edition %}
+      h2
+        a href="{{ site.previous_edition }}" target="_blank"  CHECK OUT PREVIOUS EDITION
+      {% endif %}
+      ul.social-icons
+      {% if site.twitter %}
+        li
+          a href="https://twitter.com/{{ site.twitter }}" target="_blank" 
+            i.fab.fa-twitter-square
+      {% endif %}
+      {% if site.facebook %}
+        li
+          a href="https://facebook.com/{{ site.facebook }}" target="_blank" 
+            i.fab.fa-facebook-square
+      {% endif %}
+      {% if site.github %}
+        li
+          a href="https://github.com/{{ site.github }}" target="_blank" 
+            i.fab.fa-github-square
+      {% endif %}
+      {% if site.email %}
+        li
+          a href="mailto:{{ site.email }}" target="_blank" 
+            i.fas.fa-envelope-square
+      h3
+        a href="mailto:{{ site.email }}" SPONSOR US
+      {% endif %}
