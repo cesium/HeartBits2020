@@ -5,6 +5,7 @@ body
   margin: 0
   font-family: Arial
   font-size: 17px
+  background-color: $primary_color
 
 h1, h2, h3
   text-align: center
@@ -34,11 +35,14 @@ a:hover
   min-width: 110%
   min-height: 100%
 
+.image-header
+  padding-top: 10vh
+  height: 30vh
+
 .logo
   display: block
-  width: 50%
   margin: auto
-  margin-top: 100px
+  height: 100%
 
 .title
   font-weight: bold
@@ -52,9 +56,83 @@ a:hover
   height: 100%
   padding: 20px
 
-.social-icons
-  margin: 0
+.social-icon
+  margin-top: 5vh
+  display: flex
+  justify-content: center
+
+.social-icon li
+  display: inline-block
+
+.social-icon li a
+  color: #000
+  background: #fff
+  width: 35px
+  height: 35px
+  line-height: 28px
+  display: block
   text-align: center
-  font-size: 1.6em
-  a:hover
-    transform: scale(1.5)
+  border-radius: 100%
+  font-size: 16px
+  margin: 15px 6px 12px 6px
+  transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -o-transition: all 0.3s ease-in-out 0s
+
+.social-icon li a:hover
+  color: #fff
+
+.social-icon li .facebook:hover
+  background: #3b5999
+
+.social-icon li .twitter:hover
+  background: #4A9CEC
+
+.social-icon li .instagram:hover
+  background: #D6274D
+
+.social-icon li .email:hover
+  background: #e24329
+
+.blurred
+  filter: blur(5px)
+
+.countdown-box
+  width: 50vw
+  margin: auto
+  margin-top: 5vh
+
+.countdown
+  text-transform: uppercase
+  font-weight: bold
+
+
+.countdown span
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1)
+  font-size: 3rem
+  margin-left: 0.8rem
+
+
+.countdown span:first-of-type
+  margin-left: 0
+
+
+.countdown-circles
+  text-transform: uppercase
+  font-weight: bold
+
+
+.countdown-circles span
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  background: rgba(255, 255, 255, 0.2)
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1)
+
+
+.countdown-circles span:first-of-type
+  margin-left: 0
