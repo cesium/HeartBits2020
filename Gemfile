@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-feed'
-gem 'jekyll-gist'
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
-gem 'jekyll-slim'
-gem 'jemoji'
+gem 'jekyll', '3.3.1'
+gem 'jekyll-assets'
+gem 'uglifier'
+gem 'jekyll-polyglot'
+gem 'rake'
 
+gem 'font-awesome-sass'
+gem 'bootstrap-sass'
+
+gem 'rouge'
