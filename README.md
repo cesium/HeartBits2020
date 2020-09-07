@@ -7,7 +7,7 @@
 
 <h1 align="center">
   <a href="http://heartbits.pt" target="_blank">
-    <img src="img/logo_grey.png" alt="HeartBits" width="350">
+    <img src="_assets/images/banner-grey.png" alt="HeartBits" width="350">
   </a>
   <br>
 </h1>
