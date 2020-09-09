@@ -1,8 +1,10 @@
+@import '../../variables'
+
 .page-scroll.disabled
   opacity: 0.1
 
 .navbar-custom.top-nav-collapse
-  background-color: #06364d
+  background-color: $primary-color
 .nav-item
   a
     font-family: 'Helvetica Neue', 'Open Sans', sans-serif
@@ -77,13 +79,13 @@
 
 @media (min-width: 767px)
   .top-nav-collapse
-    background-color: #06364d
+    background-color: $primary-color
   .navbar-custom.top-nav-collapse
-    border-bottom: 1px solid  #06364d
+    border-bottom: 1px solid  $primary-color
 
 @media (max-width: 767px)
   .navbar-custom
-    background-color: #06364d
+    background-color: $primary-color
   a#nav-logo img
     width: 55px
     height: 55px
@@ -116,7 +118,6 @@
 
 .dropdown:hover .dropdown-menu
   display: block
-
 
 .navbar
   .dropdown-menu
