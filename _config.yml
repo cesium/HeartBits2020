@@ -8,6 +8,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://heartbits.pt" # the base hostname & protocol for your site
 previous_edition: "https://2019.heartbits.pt"
+analytics: UA-67237593-7
+
 
 # Build settings
 markdown: kramdown
