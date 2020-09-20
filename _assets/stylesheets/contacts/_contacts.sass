@@ -20,7 +20,7 @@
     text-align: center
     color: #212121
   .icons-space
-    width: 20%
+    max-width: 20%
     margin-top: 50px
     padding-bottom: 30px
     color: $secondary-color
@@ -39,7 +39,19 @@
   .fa-instagram
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
     -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent    
+  .contacts
+    word-break: break-all
+    display: -webkit-flex
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    .contact
+      color: $secondary-color
+      max-width: 20%
+      margin: 20px
+
 
 /* To fix image alignment
 .flex-wrapper
