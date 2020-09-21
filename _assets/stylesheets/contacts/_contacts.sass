@@ -43,8 +43,10 @@
   .contacts
     word-break: break-all
     display: -webkit-flex
+    display: -ms-flexbox
     display: flex
     flex-wrap: wrap
+    
     align-items: center
     justify-content: center
     .contact
@@ -92,3 +94,15 @@
     line-height: 30px
   ul.speakers-carousel
     height: 400px
+
+@media (max-width: 700px)
+  #contacts
+    .contacts
+      word-break: break-all
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-orient: vertical!important
+      -webkit-box-direction: normal!important
+      -ms-flex-direction: column!important
+      flex-direction: column!important
