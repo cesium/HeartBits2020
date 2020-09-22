@@ -49,9 +49,10 @@
     justify-content: center
     .contact
       color: $secondary-color
-      max-width: 29%
-      min-width: 23%
+      max-width: 35%
+      min-width: 27%
       margin: 20px
+      text-align: center
 
 
 /* To fix image alignment
@@ -97,7 +98,6 @@
 @media (max-width: 900px)
   #contacts
     .contacts
-      word-break: break-all
       display: -webkit-flex
       display: -ms-flexbox
       display: flex
@@ -105,3 +105,6 @@
       -webkit-box-direction: normal!important
       -ms-flex-direction: column!important
       flex-direction: column!important
+      .contact
+        max-width: 70%
+        min-width: 30%
