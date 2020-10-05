@@ -66,11 +66,10 @@
                     
                       <!-- Lecture start -->
                       <div class="panel schedule-item">
-                        <div class="lecture-icon-wrapper">
-                          <span class="fa fa-cutlery"></span>
+                        <div class="lecture-time-wrapper">
+                          <strong class="time highlight">{{session.time}}</strong>
                         </div>
                         <a data-toggle="collapse" data-parent="#schedule_{{day.tag}}_{{auditorium.tag}}_timeline" href="#schedule_{{day.tag}}_{{auditorium.tag}}_{{session.tag}}" class="schedule-item-toggle collapsed">
-                          <strong class="time highlight"><span class="icon icon-office-24"></span>{{session.time}}</strong>
                           <h6 class="title">{{session.name}}<i class="icon icon-arrows-06"></i></h6>
                         </a>
                         <div id="schedule_{{day.tag}}_{{auditorium.tag}}_{{session.tag}}" class="panel-collapse collapse in schedule-item-body">
