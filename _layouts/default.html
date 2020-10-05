@@ -4,11 +4,15 @@
   {% include layout/head.html %}
   </head>
   <body id="page-top" class="index" ng-app="sei-app">
-  	{% include layout/navbar.html %}
+    <div id="page-container">
+      {% include layout/navbar.html %}
 
-    {{ content }}
+      <div id="content-wrap">
+        {{ content }}
+      </div>
 
-    {% include layout/footer.html %}
+      {% include layout/footer.html %}
+    </div>
 
     {% javascript main %}
   </body>
