@@ -1,0 +1,50 @@
+calendar:
+  - name: Dia 31
+    tag: day1
+    date: 31/10/2020
+    auditoriums:
+      - name: Spot 1
+        active: active
+        tag: auditorium1
+        sessions:
+          - name: Atividade XPTO
+            time: 14h30 - 15h
+            speaker: John Cena
+            description: U can't c mee
+            tag: time1
+          - name: Atividade XPTO
+            time: 15h30 - 16h
+            speaker: John Cena
+            description: U can't c mee
+            tag: time2
+          - name: Atividade XPTO
+            time: 16h30 - 17h
+            speaker: John Cena
+            description: U can't c mee
+            tag: time3
+      - name: Spot 2
+        active: 
+        tag: auditorium2
+        sessions:
+  - name: Dia 1
+    tag: day2
+    date: 1/11/2020
+    auditoriums:
+      - name: Outro Spot
+        active: active
+        tag: auditorium1
+        sessions:
+          - name: Atividade XPTO melhor ainda
+            time: 22h
+            speaker: John Cena
+            description: U can't c mee
+            tag: time1
+      - name: Spot 2 Pior ainda
+        active: 
+        tag: auditorium2
+        sessions:
+        
+
+
+
+

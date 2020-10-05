@@ -1,0 +1,455 @@
+#schedule
+  text-align: center
+  background-attachment: fixed
+  background-color: #fafafa
+  background-position: center center
+  background-repeat: none
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  -o-background-size: cover
+  height: 100%
+  padding-top: 50px
+  padding-bottom: 60px
+  color: #222
+  .section-title
+    margin-top: 50px
+    border: 3px solid $secondary-color
+    padding: 15px
+  .honor-text
+    text-align: center
+    color: #212121
+  .schedule
+    margin-bottom: 50px
+    text-align: left
+    background-color: #ffffff
+  .schedule 
+    .tab-content
+      .nav-current
+        background-color: #eff1f5
+        border-color: #e9e9e9
+  .nav.nav-schedule 
+    display: table
+    width: 100%
+    border-style: solid
+    border-width: 0 1px 0 0
+    border-color: #e9e9e9
+    z-index: 10
+  .nav.nav-schedule 
+    >li 
+      -webkit-transition: background 0.2s ease, border 0.2s ease
+      -moz-transition: background 0.2s ease, border 0.2s ease
+      -o-transition: background 0.2s ease, border 0.2s ease
+      transition: background 0.2s ease, border 0.2s ease
+      position: relative
+      display: table-cell
+      font-size: 15px
+      border-style: solid
+      border-width: 1px 0 1px 1px
+      border-color: #e9e9e9
+      margin-bottom: 0px  
+  .nav.nav-schedule
+    >li
+      >a
+        -webkit-transition: color 0.2s ease
+        -moz-transition: color 0.2s ease
+        -o-transition: color 0.2s ease
+        transition: color 0.2s ease
+        display: block
+        text-decoration: none
+        padding: 20px 15px 12px
+        text-align: center
+  .nav.nav-schedule
+    >li
+      >a
+        *
+          &:first-child
+            margin-top: 0
+  .nav.nav-schedule
+    >li
+      >a
+        *
+          &:last-child
+            margin-bottom: 0
+  .nav.nav-schedule
+    >li
+      >a
+        &:hover
+          background-color: transparent
+        &:focus
+          background-color: transparent
+  .nav.nav-schedule
+    >li
+      >a
+        h1
+          &:first-child
+            margin: 0 0 -2px
+        h2
+          &:first-child
+            margin: 0 0 -2px
+        h3
+          &:first-child
+            margin: 0 0 -2px
+        h4
+          &:first-child
+            margin: 0 0 -2px
+        h5
+          &:first-child
+            margin: 0 0 -2px
+        h6
+          &:first-child
+            margin: 0 0 -2px
+  .nav.nav-schedule
+    >li.active
+      &:after
+        opacity: 1
+  .nav.nav-schedule
+    >li.active
+      cursor: default
+      pointer-events: none
+      &:hover
+        cursor: default
+        pointer-events: none
+      &:active
+        cursor: default
+        pointer-events: none
+  .nav.nav-schedule
+    >li.active
+      a
+        color: #ffffff
+        &:hover
+          color: #ffffff
+          *
+            color: #ffffff
+        &:focus
+          color: #ffffff
+          *
+            color: #ffffff
+        *
+          color: #ffffff
+  .schedule
+    .tab-content
+      padding: 0
+      border-style: solid
+      border-width: 0 1px 1px
+      border-color: transparent #e9e9e9 #e9e9e9
+  .schedule
+    .tab-content
+      .img-responsive
+        margin: 0
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        display: inline-block
+        background-color: #eff1f5
+        border: none
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li
+          display: inline-block
+          border-width: 0 0 1px
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li
+          &:not(.active)
+            border-color: transparent
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li
+          &:after
+            display: none
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li
+          >a
+            margin: 0
+            padding: 16px 45px 14px
+            font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif
+            font-weight: 700
+            text-transform: uppercase
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li
+          >a
+            &:not(:hover)
+              &:not(:active)
+                color: #51545b
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li.active 
+          background-color: transparent
+  .schedule
+    .tab-content-schedule
+      position: relative
+      border: none
+      padding: 90px 100px 80px 80px
+  .schedule
+    .tab-content-schedule
+      &:before
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 104px
+        width: 0
+        display: block
+        content: ""
+        border-right: 1px solid #eff1f5
+  .schedule
+    .tab-content-schedule
+      .panel-group
+        margin-bottom: 0
+  .schedule
+    .tab-content-schedule
+      .schedule-item
+        position: relative
+        margin-bottom: 22px
+        min-height: 65px
+        padding: 0 0 0 104px
+        background-color: transparent
+        &:last-child
+          margin-bottom: 0
+    .schedule-item
+      +
+        .schedule-item
+          margin-top: 0
+  .schedule
+    .schedule-item
+      .lecture-icon-wrapper
+        position: absolute
+        vertical-align: middle
+        top: 25px
+        left: 4px
+        width: 40px
+        height: 40px
+        text-align: center
+        font-size: 20px
+        line-height: 36px
+        background-color: #ffffff
+        border-style: solid
+        border-width: 1px
+        border-radius: 50%
+        overflow: hidden
+      .schedule-item-toggle
+        margin-bottom: 0
+        display: block
+        text-decoration: none
+        color: #000000
+        .time
+          margin-bottom: 10px
+          font-size: 15px
+          .icon
+            margin-right: 8px
+            vertical-align: middle
+            color: #babfcc
+        .title
+          position: relative
+          margin: 0
+          padding: 0 35px 11px 0
+          border-bottom: 1px solid #eff1f5
+          .icon
+            -webkit-transition: -webkit-transform 0.3s ease
+            -moz-transition: -moz-transform 0.3s ease
+            -o-transition: -o-transform 0.3s ease
+            transition: -webkit-transform 0.3s ease,-moz-transform 0.3s ease,-o-transform 0.3s ease,transform 0.3s ease
+            position: absolute
+            right: 10px
+            bottom: 11px
+            font-size: 13px
+            color: #51545b
+  .schedule
+    .schedule-item
+      .schedule-item-body
+        margin-top: 0
+        .speaker-wrapper
+          margin-bottom: 0
+        >article
+          margin: 0
+          padding: 11px 0
+        >div
+          margin: 0
+          padding: 11px 0
+        .speaker-name
+          display: inline-block
+          font-size: 11px
+          text-transform: uppercase
+          letter-spacing: 0.5em
+  .schedule.schedule-light
+    margin-bottom: 30px
+    .nav-current
+      font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif
+      font-weight: 700
+      text-transform: uppercase
+      color: #262627
+    .nav.nav-schedule 
+      border-style: solid
+      border-width: 1px
+      border-collapse: separate
+      >li
+        border-width: 0 1px
+        border-color: transparent #ffffff
+        &:first-child
+          border-left-color: transparent
+        &:last-child
+          border-right-color: transparent
+        &:after
+          display: none
+        >a
+          padding: 24px 15px 19px
+          font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif
+          font-weight: 700
+          text-transform: uppercase
+          color: #ffffff
+      >li.active
+        background-color: #ffffff
+    .tab-content
+      padding: 60px
+    .schedule-item 
+      margin-bottom: 40px
+      overflow: visible
+      .schedule-item-toggle
+        position: relative
+        margin-bottom: 0
+        display: block
+        font-size: 0
+        text-decoration: none
+        color: #000000
+        .time
+          vertical-align: top
+          margin: 0 20.5% 0 0
+          width: 26.5%
+          text-align: right
+        .lecture-icon-wrapper
+          margin: 0 40px
+          position: absolute
+          top: -8px
+          left: 26.5%
+          display: inline-block
+          line-height: 38px
+          border: none
+          *
+            color: #ffffff
+        .title 
+          display: inline-block
+          width: 53%
+          padding: 0
+          border: none
+      .schedule-item-body
+        margin: 0 0 0 47%
+        .speaker-name
+          display: inline-block
+          font-size: 11px
+          text-transform: uppercase
+          letter-spacing: 0.5em
+  .nav.nav-schedule
+    >li
+      &:after
+        border-color: #7bcacb
+    >li.active
+      background-color: #7bcacb
+  .schedule
+    .tab-content
+      .nav.nav-schedule
+        >li.active
+          border-color: #7bcacb
+          >a
+            &:not(:hover)
+              &:not(:active)
+                color: #7bcacb
+            &:hover
+              color: #7bcacb
+            &:focus
+              color: #7bcacb
+    .schedule-item
+      .lecture-icon-wrapper
+        border-color: #7bcacb
+      .schedule-item-toggle.collapsed
+        .title
+          .icon
+            color: #7bcacb
+      .schedule-item-body
+        .speaker-name
+          color: #7bcacb
+  .schedule.schedule-light
+    .nav.nav-schedule
+      border-color: #7bcacb
+      >li
+        background-color: #7bcacb
+      >li.active
+        a
+          color: #7bcacb
+          &:hover
+            color: #7bcacb
+            *
+              color: #7bcacb
+          &:focus
+            color: #7bcacb
+            *
+              color: #7bcacb
+          *
+            color: #7bcacb
+    .tab-content
+      border-color: #7bcacb
+    .schedule-item 
+      .schedule-item-toggle
+        .lecture-icon-wrapper
+          background-color: #7bcacb
+      .schedule-item-body
+        .speaker-name
+          color: #7bcacb
+  .navigation-link.active
+    border-color: #7bcacb
+  .tabs-vertical
+    .nav.nav-tabs
+      &:before
+        background-color: #7bcacb
+      >li
+        &:not(.active)
+          a
+            background-color: #7bcacb
+  .panel-group
+    .panel
+      .panel-heading
+        a
+          background-color: #7bcacb
+  .panel-group-alt
+    .panel
+      >a
+        &:not(.collapsed)
+          background-color: #7bcacb
+  .table
+    >thead
+      >tr
+        >th
+          background-color: #7bcacb
+        >td
+          background-color: #7bcacb
+  .highlight
+    color: #7bcacb
+  a
+    color: #7bcacb
+    &:hover
+      color: #7bcacb
+    &:active
+      color: #7bcacb
+    &:focus
+      color: #7bcacb
+  
+  
+
+
+
+
+/* To fix image alignment
+.flex-wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
