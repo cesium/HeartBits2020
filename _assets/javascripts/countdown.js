@@ -18,7 +18,7 @@ var Countdown = {
       seconds: this.$el.find('.bloc-time.sec .figure')
     };
 
-    var dateFuture = new Date("October 11, 2020 00:00:00");
+    var dateFuture = new Date("October 11, 2020 21:00:00");
     var dateNow = new Date();
 
     var seconds = Math.floor((dateFuture - (dateNow)) / 1000);
