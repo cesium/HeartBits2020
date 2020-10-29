@@ -4,6 +4,6 @@
 - name: Pfizer
   pic: pfizer.png
   link: http://pfizer.pt/
-# - name: Grow
-#   pic: grow.png
-#   link: http://grow.josedemello.pt/
+- name: Roche
+  pic: roche-blue.svg
+  link: https://www.roche.com/
