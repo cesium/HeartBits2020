@@ -1,0 +1,115 @@
+<section id="schedule">
+  <div class="container ">
+    <div class="col-md-10 col-md-offset-1">
+
+      <!-- Schedule start -->
+      <div class="row schedule">
+
+        <!-- Navigation by day start -->
+        <ul class="nav nav-schedule">
+          {% for day in site.data.schedule.calendar %}
+
+            <li id="#schedule_{{day.tag}}"><a href="#{{day.tag}}" data-toggle="tab"><h5 class="highlight">{{day.name}}</h5><p class="text-alt">{{day.date}}</p></a></li>
+
+          {% endfor %}
+        </ul>
+        <!-- Navigation by day end -->
+
+        <!-- First level content start -->
+        <div class="tab-content">
+
+          {% for day in site.data.schedule.calendar %}
+
+          <!-- Day content start -->
+          <div id="{{day.tag}}" class="tab-pane fade in">
+
+            <!-- Navigation by auditorium start -->
+            <ul class="nav nav-schedule">
+              {% for auditorium in day.auditoriums %}
+
+                {% if auditorium.active == "active" %}
+
+                <li class="active"><a href="#schedule_{{day.tag}}_{{auditorium.tag}}" data-toggle="tab">{{auditorium.name}}</a></li>
+                
+                {% else %}
+
+                <li><a href="#schedule_{{day.tag}}_{{auditorium.tag}}" data-toggle="tab">{{auditorium.name}}</a></li>
+
+                {% endif %}
+
+              {% endfor %}
+            </ul>
+            <!-- Navigation by auditorium start -->
+
+            <!-- Second level content start -->
+            <div class="tab-content tab-content-schedule">
+
+              {% for auditorium in day.auditoriums %}
+
+                <!-- Auditorium content start -->
+                {% if auditorium.active == "active" %}
+
+                <div id="schedule_{{day.tag}}_{{auditorium.tag}}" class="tab-pane fade active in">
+
+                {% else %}
+                
+                <div id="schedule_{{day.tag}}_{{auditorium.tag}}" class="tab-pane fade in">
+  
+                {% endif %}
+
+                {% if auditorium.sessions.size > 0 %}
+
+                  <!-- Accordion start -->
+                  <div class="panel-group" id="schedule_{{day.tag}}_{{auditorium.tag}}_timeline">
+
+                    {% for session in auditorium.sessions %}
+                    
+                      <!-- Lecture start -->
+                      <div class="panel schedule-item">
+                        <div class="lecture-time-wrapper">
+                          <strong class="time highlight">{{session.time}}</strong>
+                        </div>
+                        <a data-toggle="collapse" data-parent="#schedule_{{day.tag}}_{{auditorium.tag}}_timeline" href="#schedule_{{day.tag}}_{{auditorium.tag}}_{{session.tag}}" class="schedule-item-toggle collapsed">
+                          <h6 class="title">{{session.name}}<i class="icon icon-arrows-06"></i></h6>
+                        </a>
+                        <div id="schedule_{{day.tag}}_{{auditorium.tag}}_{{session.tag}}" class="panel-collapse collapse in schedule-item-body">
+                          <article>
+                            <p class="description">{{session.description}}</p>
+                            <strong class="highlight speaker-name">{{session.speaker}}</strong>
+                          </article>
+                        </div>
+                      </div>
+                      <!-- Lecture end -->
+
+                    {% endfor %}
+
+                  </div>
+                  <!-- Accordion end -->
+
+                  {% else %}
+
+                  <div class="schedule-item">No schedule yet.</div>
+
+                  {% endif %}
+
+                </div>
+                <!-- Auditorium content end -->
+
+              {% endfor %}
+
+            </div>
+            <!-- Second level content end -->
+
+          </div>
+          <!-- Day content end -->
+
+          {% endfor %}
+
+        </div>
+        <!-- First level content end -->
+
+      </div>
+      <!-- Schedule end -->
+    </div>
+  </div>
+</section>
